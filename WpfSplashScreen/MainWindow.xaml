@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfSplashScreen.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="355" Width="398" BorderBrush="Transparent" Icon="Media/twitter follow me.ico" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush ImageSource="Media/b3c171215373a3ab325fac5ab92c29a7.jpg"/>
+    </Window.Background>
+    <Grid MouseLeftButtonDown="move">
+        <Button Name="xMinButton" BorderBrush="Transparent" HorizontalAlignment="Left" Margin="332,10,0,0" VerticalAlignment="Top" Width="24" RenderTransformOrigin="-0.267,0.6" Height="24" Click="xMinButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Media/020739-rounded-glossy-black-icon-symbols-shapes-minimize.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="xCloseButton" BorderBrush="Transparent" HorizontalAlignment="Left" Margin="361,10,0,0" VerticalAlignment="Top" Width="27" Height="24" Click="xCloseButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Media/close.png"/>
+            </Button.Background>
+        </Button>
+        <TextBox Name ="xUserNameTextBox"  HorizontalAlignment="Left" Margin="72,277,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="23" Width="172" TextAlignment="Center" TextChanged="xUserNameTextBox_TextChanged"/>
+        <PasswordBox Name="xPasswordTextBox"  HorizontalAlignment="Left" Margin="72,326,0,0" VerticalAlignment="Top" Height="19" Width="172"/>
+        <Button Content="Surprise" HorizontalAlignment="Left" Margin="281,300,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.08,0.6" Click="Button_Click"/>
+        <Label Content="User Name" HorizontalAlignment="Left" Margin="56,251,0,0" VerticalAlignment="Top"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="56,300,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
